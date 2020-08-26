@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" required>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" required>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="other">Other</label>
+            <input type="radio" name="other" id="other">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="5" maxlength="10" required>
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <select name="month" id="">
+                <option value="">Month</option>
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+            </select>
+            <select name="day" id="">
+                <option value="">Day</option>
+                <option value="">1</option>
+                <option value="">13</option>
+                <option value="">25</option>
+            </select>
+            <select name="year" id="">
+                <option value="">Year</option>
+                <option value="">2001</option>
+                <option value="">2007</option>
+                <option value="">2020</option>
+            </select>
+        </div>
+        <p>I agree to the terms and conditions <input type="checkbox" name="agree" id=""> </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
